@@ -8,6 +8,9 @@ export type Profile = {
   trial_ends_at: string | null;
   stripe_customer_id: string | null;
   created_at: string | null;
+  notify_daily_digest: boolean | null;
+  notify_proposal_viewed: boolean | null;
+  notify_invoice_overdue: boolean | null;
 };
 
 export type Client = {
