@@ -7,7 +7,6 @@ const PROTECTED_PREFIXES = [
   "/pipeline",
   "/proposals",
   "/invoices",
-  "/assistant",
   "/settings",
   "/onboarding",
 ];

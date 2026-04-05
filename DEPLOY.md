@@ -27,8 +27,6 @@ In **Project → Settings → Environment Variables**, add every variable you us
 | `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Same as local |
 | `NEXT_PUBLIC_APP_URL` | **Production:** `https://<your-project>.vercel.app` or your custom domain — **no trailing slash** |
 | `SUPABASE_SERVICE_ROLE_KEY` | Optional; only if your code uses it server-side |
-| `ANTHROPIC_API_KEY` | Server-only; required for `/assistant` |
-| `ANTHROPIC_MODEL` | Optional |
 | Stripe / Resend | When you enable those features |
 
 **Important:** After changing env vars, trigger a **Redeploy** (Deployments → … → Redeploy) so the new values apply.
@@ -69,15 +67,10 @@ Link the folder once with `npx vercel link` if prompted.
 
 **Project → Settings → Domains** → add your domain and follow DNS instructions. Update Supabase **Site URL** and **Redirect URLs** to include `https://yourdomain.com` and `https://yourdomain.com/auth/callback`.
 
-## 7. API routes & limits
-
-- `/api/ai` uses the Node runtime (`maxDuration` is set in code). On **Hobby**, function duration is limited; upgrade if Claude calls time out on large prompts.
-- Ensure `ANTHROPIC_API_KEY` is set in Vercel for the Assistant page to work in production.
-
 ## Checklist
 
 - [ ] All required env vars copied into Vercel (Production + Preview if needed)
 - [ ] `NEXT_PUBLIC_APP_URL` matches the live site URL (no trailing slash)
 - [ ] Supabase Site URL + `/auth/callback` redirect URLs updated for production (and previews if used)
 - [ ] Redeploy after env changes
-- [ ] Smoke test: sign in, open dashboard, open Assistant (if using AI)
+- [ ] Smoke test: sign in and open the dashboard

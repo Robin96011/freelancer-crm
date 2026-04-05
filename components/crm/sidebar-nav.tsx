@@ -8,7 +8,6 @@ import {
   Kanban,
   FileText,
   Receipt,
-  Sparkles,
   Settings,
   type LucideIcon,
 } from "lucide-react";
@@ -27,7 +26,6 @@ export const CRM_NAV_ITEMS: CrmNavItem[] = [
   { href: "/pipeline", label: "Pipeline", icon: Kanban },
   { href: "/proposals", label: "Proposals", icon: FileText },
   { href: "/invoices", label: "Invoices", icon: Receipt },
-  { href: "/assistant", label: "Assistant", icon: Sparkles },
   { href: "/settings", label: "Settings", icon: Settings },
 ];
 
