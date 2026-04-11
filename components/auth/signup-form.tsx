@@ -210,7 +210,7 @@ export function SignupForm() {
       <CardHeader>
         <CardTitle>Create account</CardTitle>
         <CardDescription>
-          Start your 14-day free trial. No card required.
+          Create your free account.
         </CardDescription>
       </CardHeader>
       <CardContent className="space-y-4">
