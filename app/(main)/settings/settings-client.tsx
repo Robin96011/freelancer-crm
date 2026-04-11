@@ -238,12 +238,6 @@ export function SettingsClient({
           </label>
         </div>
 
-        <div className="border rounded-lg p-4">
-          <h2 className="font-medium mb-3">Account</h2>
-          <p className="text-sm text-muted-foreground">
-            To upgrade your account, contact us via the platform you purchased this from.
-          </p>
-        </div>
       </div>
     </div>
   );
