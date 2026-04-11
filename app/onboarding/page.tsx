@@ -38,10 +38,7 @@ export default function OnboardingPage() {
                 </label>
               ))}
             </div>
-            <p className="text-muted-foreground text-xs">
-              Your 14-day trial starts when your account was created.
-            </p>
-            <Button type="submit" className="w-full">
+<Button type="submit" className="w-full">
               Continue
             </Button>
           </form>

@@ -26,7 +26,7 @@ export default async function Home() {
       </div>
       <div className="flex flex-wrap items-center justify-center gap-3">
         <Button asChild>
-          <Link href="/auth/signup">Start free trial</Link>
+          <Link href="/auth/signup">Get started</Link>
         </Button>
         <Button variant="outline" asChild>
           <Link href="/auth/login">Sign in</Link>

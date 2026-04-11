@@ -239,13 +239,10 @@ export function SettingsClient({
         </div>
 
         <div className="border rounded-lg p-4">
-          <h2 className="font-medium mb-3">Billing</h2>
-          <Link
-            href="/upgrade"
-            className="inline-block bg-blue-600 text-white px-4 py-2 rounded"
-          >
-            Upgrade
-          </Link>
+          <h2 className="font-medium mb-3">Account</h2>
+          <p className="text-sm text-muted-foreground">
+            To upgrade your account, contact us via the platform you purchased this from.
+          </p>
         </div>
       </div>
     </div>
